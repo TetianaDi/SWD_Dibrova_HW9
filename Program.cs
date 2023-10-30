@@ -1,27 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SWD_Dibrova1
 {
-    internal class Person
+    internal class Program
     {
         static void Main(string[] args)
         {
 
-            string name = "Tania";
-            string surname = "Dibrova";
-            int age = 32;
-            Console.WriteLine($"I am {age} years old, my name is {name} {surname}");
-
             int x = 20;
             int y = 30;
-            sumMyNumbers(x, y);
+            SumMyNumbers(x, y);
+            
+            var person = new Person();
+            person.Print();
+
+           
+
 
         }
-        static void sumMyNumbers(int x, int y)
+        static void SumMyNumbers(int x, int y)
         {
 
             int result = x + y;
