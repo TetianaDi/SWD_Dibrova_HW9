@@ -1,25 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace SWD_Dibrova1
 {
-    
+
     public class Person
     {
-
-        public string name = "Tania";
-        public string surname = "Dibrova";
-        public int age = 32;
-        
-        public void Print()
+        public Person()
         {
-            Console.WriteLine($"I am {age} years old, my name is {name} {surname}");
-            //Console.ReadLine();
+
         }
+
+        public Person(string name, string surname, int age)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.age = age;
+        }
+    
+
+        public string name;
+        public string surname ;
+        public int age;
+
+        
+        public void PrintPerson()
+        {
+            Console.WriteLine($"I am {age} years old, my name is {name} {surname}");           
+        }
+        
 
     }
 
