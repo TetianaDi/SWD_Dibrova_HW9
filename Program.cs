@@ -6,15 +6,9 @@ namespace SWD_Dibrova1
     {
         static void Main(string[] args)
         {
-
-            int x = 25;
-            int y = 16;
-                     
-            СountSquareRoot(x, y);
-
-            // please see SquareRoot class 
-            //var squareRoot = new сountSquareRoot(9, 15);
-
+            // HW 5
+            var squareRoot = new SquareRoot();
+            squareRoot.СountSquareRoot(9, 15);
 
 
 
@@ -54,30 +48,8 @@ namespace SWD_Dibrova1
             Console.WriteLine($"Second a: {a} Second b: {b}");
             */
 
-
-
-
             Console.ReadLine();
         }
-
-        // HW 5
-        static void СountSquareRoot(int x, int y)
-        {
-
-            if (x < y)
-
-            {
-
-                Console.WriteLine(Math.Sqrt(y));
-            }
-            else
-            {
-
-                Console.WriteLine(Math.Sqrt(x));
-            }
-        }
-
-
 
     }
 }

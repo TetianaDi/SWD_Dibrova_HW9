@@ -9,25 +9,20 @@ namespace SWD_Dibrova1
 {
     public class SquareRoot
     {
+        public void СountSquareRoot(int x, int y)
+        {
 
+            if (x < y)
+            {
 
+                Console.WriteLine(Math.Sqrt(y));
+            }
+            else
+            {
 
-        //public void СountSquareRoot(int x, int y)
-        //{
-
-        //    if (x < y)
-
-        //    {
-
-        //        Console.WriteLine(Math.Sqrt(y));
-        //    }
-
-        //    else
-        //    {
-
-        //        Console.WriteLine(Math.Sqrt(x));
-        //    }
-        //}
+                Console.WriteLine(Math.Sqrt(x));
+            }
+        }
 
 
 
