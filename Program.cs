@@ -6,12 +6,38 @@ namespace SWD_Dibrova1
     {
         static void Main(string[] args)
         {
-            // HW 5
-            var squareRoot = new SquareRoot();
-            squareRoot.СountSquareRoot(9, 9);
+            // HW 6.1
+           // var seasons = new Seasons();         
+            //seasons.PrintSeasons(12);
 
+            // HW 6.2
+            //var person1 = new Person();
+            ///person1.Print(25, "Nick", "Name");
 
+            //HW 6.3
+            for (int i = 1; i <= 100; i++)
 
+            {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+
+                else
+                {
+                    Console.WriteLine(i);
+                }                        
+            }
 
             // HW 3.1
             /*
@@ -33,8 +59,8 @@ namespace SWD_Dibrova1
 
             // HW 4.1
             /*
-             var person = new Person("Name", "Surname", 99);
-             person.PrintPerson
+             var person = new Person2("Name", "Surname", 99);
+             person.PrintPerson;
             */
 
             // HW 4.2
@@ -46,6 +72,12 @@ namespace SWD_Dibrova1
 
             Console.WriteLine($"First a: {a} First b: {b}");
             Console.WriteLine($"Second a: {a} Second b: {b}");
+            */
+
+            // HW 5
+            /*
+            var squareRoot = new SquareRoot();
+            squareRoot.СountSquareRoot(9, 9);
             */
 
             Console.ReadLine();

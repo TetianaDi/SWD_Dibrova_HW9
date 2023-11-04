@@ -10,28 +10,22 @@ namespace SWD_Dibrova1
 
         }
 
-        public Person(string name, string surname, int age)
+        public void Print(int age, string name, string surname)
         {
-            this.name = name;
-            this.surname = surname;
-            this.age = age;
-        }
-    
 
-        public string name;
-        public string surname ;
-        public int age;
+            if (age >= 120 || age <= 0 || name.Length <= 2 || surname.Length == 2) //як перевірити на наявність спецсимволів?
+            {
+                Console.WriteLine("Check your age, name or surname");
+            }
+            else
+            {
+                Console.WriteLine($"I am {age} years old. my name is {name} {surname}");
+            }
 
-        
-        public void PrintPerson()
-        {
-            Console.WriteLine($"I am {age} years old, my name is {name} {surname}");           
         }
-        
 
     }
-
 }
-        
+
 
 
