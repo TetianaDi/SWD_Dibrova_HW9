@@ -12,7 +12,19 @@ namespace SWD_Dibrova1
         public void СountSquareRoot(int x, int y)
         {
 
-            if (x < y)
+            if (x <=0 || y <=0)
+            {
+                Console.WriteLine("One of the numbers is zero or negative");
+            }         
+            else if (x > y)
+            {
+                Console.WriteLine(Math.Sqrt(x));
+            }
+            else if (x == y)
+            {
+                Console.WriteLine("Numbers are equal");
+            }
+            else if (x < y)
             {
 
                 Console.WriteLine(Math.Sqrt(y));
@@ -20,14 +32,8 @@ namespace SWD_Dibrova1
             else
             {
 
-                Console.WriteLine(Math.Sqrt(x));
+                Console.WriteLine("Check your numbers");
             }
         }
-
-
-
-
     }
-
-
 }

@@ -8,7 +8,7 @@ namespace SWD_Dibrova1
         {
             // HW 5
             var squareRoot = new SquareRoot();
-            squareRoot.СountSquareRoot(9, 15);
+            squareRoot.СountSquareRoot(9, 9);
 
 
 
