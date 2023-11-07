@@ -7,14 +7,19 @@ namespace SWD_Dibrova1
         static void Main(string[] args)
         {
             // HW 6.1
-           // var seasons = new Seasons();         
-            //seasons.PrintSeasons(12);
+            /*
+            var seasons = new Seasons();         
+            seasons.PrintSeasons(12);
+            */
 
+            
             // HW 6.2
-            //var person1 = new Person();
-            ///person1.Print(25, "Nick", "Name");
+            var person1 = new Person(125, "Nick", "Name");
+            //person1.Person;
+            
 
             //HW 6.3
+            /*
             for (int i = 1; i <= 100; i++)
 
             {
@@ -38,6 +43,7 @@ namespace SWD_Dibrova1
                     Console.WriteLine(i);
                 }                        
             }
+            */
 
             // HW 3.1
             /*
@@ -77,8 +83,9 @@ namespace SWD_Dibrova1
             // HW 5
             /*
             var squareRoot = new SquareRoot();
-            squareRoot.СountSquareRoot(9, 9);
+            squareRoot.СountSquareRoot(9, -9);
             */
+            
 
             Console.ReadLine();
         }

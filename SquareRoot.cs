@@ -12,7 +12,7 @@ namespace SWD_Dibrova1
         public void СountSquareRoot(int x, int y)
         {
 
-            if (x <=0 || y <=0)
+            if (x <=0 && y <=0)
             {
                 Console.WriteLine("One of the numbers is zero or negative");
             }         
@@ -29,11 +29,7 @@ namespace SWD_Dibrova1
 
                 Console.WriteLine(Math.Sqrt(y));
             }
-            else
-            {
 
-                Console.WriteLine("Check your numbers");
-            }
         }
     }
 }
