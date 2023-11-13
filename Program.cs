@@ -8,8 +8,26 @@ namespace SWD_Dibrova1
     {
         static void Main(string[] args)
         {
-            Arrays forArrays = new Arrays();
 
+            Animal animal = new Animal { Lenght = 1, Name = "Ani", Color = "white"};            
+            animal.MakeSound("silent");
+
+            Bird bird = new Bird();
+            bird.MakeSound("Cra");
+            bird.tailLenght = 1;
+
+            bird.BirdCanFly(true);
+            Console.WriteLine($"Bird has a tail of lenght { bird.tailLenght}");
+            
+            Fish fish= new Fish();
+            fish.FindDepth(5);
+            fish.DefaultDepth();
+
+
+
+            // HW 8
+            /*
+            Arrays forArrays = new Arrays();
 
             var array1 = new int[10];
             array1[0] = 80;
@@ -22,23 +40,33 @@ namespace SWD_Dibrova1
             array1[7] = 16;
             array1[8] = 78;
             array1[9] = 98;
+            */
 
             // HW 8.1
+            /*
             forArrays.ShowMaxOfArray(array1);
+            */
 
             // HW 8.2
+            /*
             forArrays.SumEvenNumbers(array1);
+            */
 
             // HW 8.3
+            /*
             int result = forArrays.MinValueOddIndex(array1);
             Console.WriteLine($"The minimum value of an element with an odd index " + result);
 
             Console.WriteLine("______");
+            */
+
 
             // HW 8.4
+            /*
             string myString = "Friday!!!";           
             StringExtention.StringToSymbol(myString);
             Console.WriteLine(myString); //не знаю як прибрати нижню строку у звичайному написанні =(
+            */
 
 
 
