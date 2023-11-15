@@ -9,6 +9,19 @@ namespace SWD_Dibrova1
         static void Main(string[] args)
         {
 
+
+            Printer printer = new Printer();
+            printer.Print('o');
+            printer.Print("Any string");
+            printer.Print(111);
+            printer.Print("Inna", 46);
+            printer.Print(10, "Builder");
+
+          
+
+
+            // HW 9
+            /*
             Animal animal = new Animal { Lenght = 1, Name = "Ani", Color = "white"};            
             animal.MakeSound("silent");
 
@@ -22,6 +35,7 @@ namespace SWD_Dibrova1
             Fish fish= new Fish();
             fish.FindDepth(5);
             fish.DefaultDepth();
+            */
 
 
 
