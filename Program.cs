@@ -9,7 +9,7 @@ namespace SWD_Dibrova1
         static void Main(string[] args)
         {
 
-
+            // HW 10
             Printer printer = new Printer();
             printer.Print('o');
             printer.Print("Any string");
