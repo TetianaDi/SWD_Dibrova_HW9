@@ -10,32 +10,33 @@ namespace SWD_Dibrova1
         {
 
             // HW 10
+            /*
             Printer printer = new Printer();
             printer.Print('o');
             printer.Print("Any string");
             printer.Print(111);
             printer.Print("Inna", 46);
             printer.Print(10, "Builder");
+            */
 
-          
+
 
 
             // HW 9
-            /*
-            Animal animal = new Animal { Lenght = 1, Name = "Ani", Color = "white"};            
-            animal.MakeSound("silent");
+            Animal animal = new Animal(1, "Ani", "White");                           
+            animal.MakeSound();
 
-            Bird bird = new Bird();
-            bird.MakeSound("Cra");
-            bird.tailLenght = 1;
 
+            Bird bird = new Bird(2, "Bi", "yellow");
+            bird.MakeSound();            
             bird.BirdCanFly(true);
-            Console.WriteLine($"Bird has a tail of lenght { bird.tailLenght}");
-            
-            Fish fish= new Fish();
-            fish.FindDepth(5);
+            Console.WriteLine($"Bird has a tail of lenght { bird.TailLenght}");
+
+
+            Fish fish = new Fish(3, "Fi", "Gold");
+            fish.FindDepth();
             fish.DefaultDepth();
-            */
+            
 
 
 

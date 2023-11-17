@@ -10,23 +10,31 @@ namespace SWD_Dibrova1
     internal class Animal
     {
 
-        public virtual void BaseAnimal(int lenght, string name, string color)
+        public Animal(int lenght, string name, string color)
         {
-            this.Lenght = lenght;
-            this.Name = name;
-            this.Color = color;
+
         }
 
-            public int Lenght {  get; set; }
+        //public virtual void BaseAnimal(int lenght, string name, string color)
+        //{
+        //    this.Lenght = lenght;
+        //    this.Name = name;
+        //    this.Color = color;
+        //}
 
-            public string Name { get; set; }
+        //    public int Lenght {  get; set; }
 
-            public string Color { get; set; }                  
+        //    public string Name { get; set; }
 
-        public void MakeSound(string sound)
+        //    public string Color { get; set; }                  
+
+        public string sound = "silent";
+
+        public virtual string MakeSound( )
         {
             
             Console.WriteLine($"This animal says {sound}");
+            return sound;
         }
         
     }

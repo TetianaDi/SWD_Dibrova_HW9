@@ -5,13 +5,20 @@ namespace SWD_Dibrova1
     // HW 9
     internal class Bird : Animal
     {
-        public Bird() 
+        public Bird(int lenght, string name, string color) : base(lenght, name, color)
         {
-
         }
-      
-        public bool fly {  get; set; }
-        public int tailLenght { get; set; }      
+
+        public new string sound = "cra";
+        public override string MakeSound()
+        {
+            Console.WriteLine($"This animal says {sound}");
+            return sound;
+        }
+
+        public bool Fly { get; set; }
+
+        public int TailLenght { get; set; } = 10;
 
         public void BirdCanFly(bool fly)
         {
