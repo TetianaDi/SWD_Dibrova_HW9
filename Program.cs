@@ -27,14 +27,14 @@ namespace SWD_Dibrova1
             animal.MakeSound();
 
 
-            Bird bird = new Bird(2, "Bi", "yellow");
+            Bird bird = new Bird(5, "Bi", "yellow", 11);
             bird.MakeSound();            
             bird.BirdCanFly(true);
             Console.WriteLine($"Bird has a tail of lenght { bird.TailLenght}");
 
 
             Fish fish = new Fish(3, "Fi", "Gold");
-            fish.FindDepth();
+            fish.FindDepth(10);
             fish.DefaultDepth();
             
 

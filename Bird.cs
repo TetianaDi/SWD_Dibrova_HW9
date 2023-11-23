@@ -5,8 +5,9 @@ namespace SWD_Dibrova1
     // HW 9
     internal class Bird : Animal
     {
-        public Bird(int lenght, string name, string color) : base(lenght, name, color)
+        public Bird(int lenght, string name, string color, int tailLenght) : base(lenght, name, color)
         {
+            this.TailLenght = tailLenght;
         }
 
         public new string sound = "cra";
@@ -16,9 +17,9 @@ namespace SWD_Dibrova1
             return sound;
         }
 
-        public bool Fly { get; set; }
+        public int TailLenght { get; set; }
 
-        public int TailLenght { get; set; } = 10;
+        public bool Fly { get; set; }
 
         public void BirdCanFly(bool fly)
         {

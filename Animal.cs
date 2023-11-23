@@ -12,6 +12,9 @@ namespace SWD_Dibrova1
 
         public Animal(int lenght, string name, string color)
         {
+            this.Lenght = lenght;
+            this.Name = name;
+            this.Color = color;
 
         }
 
@@ -22,11 +25,11 @@ namespace SWD_Dibrova1
         //    this.Color = color;
         //}
 
-        //    public int Lenght {  get; set; }
+        public int Lenght { get; set; }
 
-        //    public string Name { get; set; }
+        public string Name { get; set; }
 
-        //    public string Color { get; set; }                  
+        public string Color { get; set; }
 
         public string sound = "silent";
 
