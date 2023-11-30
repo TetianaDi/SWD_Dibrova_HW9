@@ -7,7 +7,7 @@ namespace SWD_Dibrova1
     {
         public Bird(int lenght, string name, string color, int tailLenght) : base(lenght, name, color)
         {
-            this.TailLenght = tailLenght;
+            TailLenght = tailLenght;
         }
 
         public new string sound = "cra";

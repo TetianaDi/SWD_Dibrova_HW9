@@ -34,7 +34,7 @@ namespace SWD_Dibrova1
 
 
             Fish fish = new Fish(3, "Fi", "Gold");
-            fish.FindDepth(10);
+            fish.FishDives();
             fish.DefaultDepth();
             
 

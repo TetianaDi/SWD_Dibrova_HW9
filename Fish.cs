@@ -10,6 +10,7 @@ namespace SWD_Dibrova1
         }
 
         public int diveDepth;
+        
 
         public void DefaultDepth()
         {
@@ -17,11 +18,15 @@ namespace SWD_Dibrova1
 
         }
 
-      
-        public void FindDepth(int depth)
-        {
-            Console.WriteLine($"Current fish depth is {depth}");
 
+        public void FishDives()
+        {
+            Random randomDepth = new Random();
+            int newDepth = randomDepth.Next(0, 30);
+
+            //diveDepth = newDepth;
+            Console.WriteLine($"Current fish depth is {newDepth}");
         }
+
     }
 }
